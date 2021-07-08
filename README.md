@@ -1,25 +1,11 @@
-# x735-v2.5
-This is the safe shutdown script and some python sample code.
+# FORK
+This is a fork, unofficial. you must check original repository.
+https://github.com/geekworm-com/x735-v2.5
 
-from: https://wiki.geekworm.com/X735_V2.5_Software
-> install
-Assuming your system is updated, add these packages:
-```
-sudo apt-get install python-smbus
-sudo apt-get install pigpio python-pigpio python3-pigpio
-git clone https://github.com/geekworm-com/x735-v2.5
-cd x735-v2.5
-sudo chmod +x *.sh
-sudo bash install.sh
-sudo reboot
-```
+## What is X735
+X735 is a geekworm's product for raspberry pi single board computer. support lot of types power supply connectors, and thermo reactable cooling fan embedded.
+that's very useful, you must buy.
 
->uninstall
-```
-sudo ./uninstall.sh
-```
->read-fan-speed
-```
-sudo ./read_fan_speed.py
-```
-After a reboot, we can run ```sudo read_fan_speed.py``` to get an update on the fan's current speed.  Nice!
+## this repository goal:
+* add systemd service
+* make debian package
