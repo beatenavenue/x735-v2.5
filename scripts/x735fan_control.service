@@ -1,0 +1,12 @@
+[Unit]
+Description = X735 PWM FAN CONTROL
+After = pigpiod.service
+
+[Service]
+ExecStart = /usr/bin/python /usr/local/bin/pwm_fan_control.py
+Restart = always
+ExecStop = /bin/kill $MAINPID
+
+[Install]
+WantedBy = multi-user.target pigpiod.awevice
+
