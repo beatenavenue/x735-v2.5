@@ -8,5 +8,4 @@ Restart = always
 ExecStop = /bin/kill $MAINPID
 
 [Install]
-WantedBy = multi-user.target pigpiod.awevice
-
+WantedBy = multi-user.target pigpiod.service
